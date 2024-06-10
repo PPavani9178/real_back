@@ -1,0 +1,39 @@
+2024-06-10T12:00:00.000Z - INFO - Inserted record with id 1
+2024-06-10T12:01:00.000Z - WARN - Missing field 'city' in record id 2
+2024-06-10T12:02:00.000Z - ERROR - Failed to insert record with id 3: Unique constraint failed
+2024-06-10T12:03:00.000Z - SUCCESS - Successfully processed 5 records
+2024-06-10T12:04:00.000Z - INFO - Inserted record with id 4
+2024-06-10T12:05:00.000Z - WARN - Invalid data format in record id 5
+2024-06-10T12:06:00.000Z - ERROR - Failed to read data file: ENOENT: no such file or directory
+2024-06-10T12:07:00.000Z - SUCCESS - Successfully added 3 new records to the database
+2024-06-10T12:08:00.000Z - INFO - Inserted record with id 6
+2024-06-10T12:09:00.000Z - WARN - Incomplete record data for id 7
+2024-06-10T12:10:00.000Z - ERROR - Database connection lost
+2024-06-10T12:11:00.000Z - SUCCESS - Reconnected to the database
+2024-06-10T12:12:00.000Z - INFO - Inserted record with id 8
+2024-06-10T09:20:44.479Z - INFO - Inserted record with id 1
+2024-06-10T09:20:44.483Z - WARN - Missing field 'city' in record id 2
+2024-06-10T09:20:44.484Z - ERROR - Failed to insert record with id 3: Unique constraint failed
+2024-06-10T09:20:44.485Z - INFO - Inserted record with id 4
+2024-06-10T09:20:44.485Z - SUCCESS - Successfully processed 5 records
+2024-06-10T09:20:44.486Z - WARN - Invalid data format in record id 5
+2024-06-10T09:20:44.486Z - ERROR - Failed to read data file: ENOENT: no such file or directory
+2024-06-10T09:20:44.487Z - SUCCESS - Successfully added 3 new records to the database
+2024-06-10T09:20:44.487Z - INFO - Inserted record with id 6
+2024-06-10T09:20:44.488Z - WARN - Incomplete record data for id 7
+2024-06-10T09:20:44.488Z - ERROR - Database connection lost
+2024-06-10T09:20:44.488Z - SUCCESS - Reconnected to the database
+2024-06-10T09:20:44.489Z - INFO - Inserted record with id 8
+2024-06-10T10:13:53.290Z - INFO - Inserted record with id 1
+2024-06-10T10:13:53.293Z - WARN - Missing field 'city' in record id 2
+2024-06-10T10:13:53.293Z - ERROR - Failed to insert record with id 3: Unique constraint failed
+2024-06-10T10:13:53.294Z - INFO - Inserted record with id 4
+2024-06-10T10:13:53.294Z - SUCCESS - Successfully processed 5 records
+2024-06-10T10:13:53.294Z - WARN - Invalid data format in record id 5
+2024-06-10T10:13:53.295Z - ERROR - Failed to read data file: ENOENT: no such file or directory
+2024-06-10T10:13:53.295Z - SUCCESS - Successfully added 3 new records to the database
+2024-06-10T10:13:53.295Z - INFO - Inserted record with id 6
+2024-06-10T10:13:53.295Z - WARN - Incomplete record data for id 7
+2024-06-10T10:13:53.295Z - ERROR - Database connection lost
+2024-06-10T10:13:53.296Z - SUCCESS - Reconnected to the database
+2024-06-10T10:13:53.296Z - INFO - Inserted record with id 8

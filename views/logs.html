@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log Dashboard</title>
+  <style>
+    body {
+        margin:20%;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: rgb(46,47,117);
+    }
+    form {
+      margin-bottom: 20px;
+      
+    }
+    label {
+      margin-right: 10px;
+      /* color:rgb(87,178,179); */
+    }
+    select{
+      margin-right: 10px;
+      width:200px;
+        height: 30px;
+    }
+
+    button{
+        margin-right: 10px;
+      width:100px;
+        background-color: rgb(130,135,69);
+        border:none;
+        padding:8px;
+        border-radius: 2px;
+    }
+    button:hover{
+        background-color: rgb(244,67,54);
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      max-height: 500px;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+  <h1>Log Dashboard</h1>
+  <form id="logForm">
+    <label for="level">Log Level:</label>
+    <select name="level" id="level">
+      <option value="INFO">INFO</option>
+      <option value="WARN">WARN</option>
+      <option value="ERROR">ERROR</option>
+      <option value="SUCCESS">SUCCESS</option>
+    </select>
+    <button type="submit">Filter</button>
+  </form>
+  <pre id="logContent"></pre>
+
+  <script>
+    document.getElementById('logForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const level = document.getElementById('level').value;
+      fetch(`/logs?level=${level}&fetch=true`)
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('logContent').textContent = data.logs.join('\n');
+        });
+    });
+
+    // Trigger initial log fetch with default level
+    document.getElementById('logForm').dispatchEvent(new Event('submit'));
+  </script>
+</body>
+</html>
